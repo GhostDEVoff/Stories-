@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Приколдесы</title>
+</head>
+<body>
+  <h1>Напиши че то</h1>
+  <form action="save_story.php" method="POST">
+    <textarea name="story" rows="6" cols="50" required></textarea><br>
+    <button type="submit">Отправить</button>
+  </form>
+
+  <h2>кто что написал:</h2>
+  <div>
+    <?php include 'stories.txt'; ?>
+  </div>
+</body>
+</html>
